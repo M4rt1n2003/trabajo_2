@@ -1,0 +1,111 @@
+body{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+   display: grid;
+   height: 100vh;
+   margin: 0;
+   background: linear-gradient(0deg,#fff 40%,#bd9e9e);
+   overflow: hidden;
+}
+
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+select{
+padding: 8px;
+font-size: 16px;
+border: 1px solid #ccc;
+border-radius: 4px;
+width: 200px;
+display: flex;
+
+}
+
+option {
+    font-size: 16px;
+ 
+}
+
+div{
+box-shadow: 1px 2px 40px 15px #bd9e9e;
+padding: 20px;
+overflow: hidden;
+}
+
+.boton{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #bd9e9e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    
+    
+}
+
+.boton:hover{
+    background-color: #806161;
+    color: #fff;
+    transition: 1s;
+}
+
+.navbar{
+    background: linear-gradient(-7deg,#bd9e9e 40%,#fff);
+    display: flex;
+    text-align: center; 
+    padding: 20px;
+    position: fixed; /* Fija el navbar en la parte superior de la página */
+    width: 100%; /* Ancho completo */
+    top: 0; /* Coloca el navbar en la parte superior de la página */
+    z-index: 1000; /* Asegura que el navbar esté en la capa superior */
+    overflow: hidden;
+}
+@media(max-width:300px){
+    .navbar{
+     font-size: 13px;
+    }
+ }
+
+.footer{
+    background: linear-gradient(-7deg,#bd9e9e 40%,#fff);
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+    overflow: hidden;
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    display: flex;
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    /* Estilos para pantallas más pequeñas */
+    select {
+        width: 100%; /* Hace que el select ocupe todo el ancho disponible */
+    }
+    
+    .footer{
+        padding: 15px; /* Reduce el espacio en el footer */
+
+    }
+    
+    .navbar {
+        font-size: 14px; /* Reduce el tamaño del texto en la barra de navegación */
+    }
+}
+
+@media(max-width: 281){
+    .footer{
+        display: flex;
+    }
+}
